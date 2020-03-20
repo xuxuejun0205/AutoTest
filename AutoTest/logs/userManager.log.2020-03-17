@@ -1,0 +1,835 @@
+2020-03-17 10:49:01.997 [main] INFO  com.course.Application - Starting Application on localhost with PID 1239 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 10:49:02.003 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 10:49:02.075 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 10:49:02 CST 2020]; root of context hierarchy
+2020-03-17 10:49:02.850 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 10:49:03.051 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 10:49:03.182 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$251a9002] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 10:49:03.391 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 10:49:03.400 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 10:49:03.401 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 10:49:03.475 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 10:49:03.476 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1401 ms
+2020-03-17 10:49:03.576 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 10:49:03.579 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 10:49:03.580 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 10:49:03.580 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 10:49:03.580 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 10:49:04.267 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 10:49:04.267 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 10:49:04.268 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 10:49:04.268 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 10:49:04.269 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 10:49:04.271 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 10:49:04.271 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 10:49:04.271 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 10:49:04.273 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 10:49:04.274 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 10:49:04.397 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 10:49:02 CST 2020]; root of context hierarchy
+2020-03-17 10:49:04.433 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 10:49:04.433 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 10:49:04.458 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 10:49:04.641 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 10:49:04.648 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 10:49:04.648 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 10:49:04.664 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 10:49:04.673 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 10:49:04.895 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 10:49:04.900 [main] INFO  com.course.Application - Started Application in 3.353 seconds (JVM running for 4.008)
+2020-03-17 10:52:14.950 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 10:49:02 CST 2020]; root of context hierarchy
+2020-03-17 10:52:14.952 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 10:52:14.953 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 10:53:51.831 [main] INFO  com.course.Application - Starting Application on localhost with PID 1253 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 10:53:51.832 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 10:53:51.868 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 10:53:51 CST 2020]; root of context hierarchy
+2020-03-17 10:53:52.603 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 10:53:52.786 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 10:53:52.893 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4049ab86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 10:53:53.065 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 10:53:53.072 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 10:53:53.072 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 10:53:53.131 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 10:53:53.131 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1263 ms
+2020-03-17 10:53:53.229 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 10:53:53.232 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 10:53:53.232 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 10:53:53.232 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 10:53:53.232 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 10:53:53.795 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 10:53:53.795 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 10:53:53.796 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 10:53:53.796 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 10:53:53.796 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 10:53:53.798 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 10:53:53.799 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 10:53:53.799 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 10:53:53.802 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 10:53:53.802 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 10:53:53.903 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 10:53:51 CST 2020]; root of context hierarchy
+2020-03-17 10:53:53.938 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 10:53:53.938 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 10:53:53.963 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 10:53:54.142 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 10:53:54.150 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 10:53:54.150 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 10:53:54.159 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 10:53:54.167 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 10:53:54.365 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 10:53:54.370 [main] INFO  com.course.Application - Started Application in 2.749 seconds (JVM running for 3.144)
+2020-03-17 10:53:57.643 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 10:53:51 CST 2020]; root of context hierarchy
+2020-03-17 10:53:57.646 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 10:53:57.646 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 10:54:04.787 [main] INFO  com.course.Application - Starting Application on localhost with PID 1257 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 10:54:04.789 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 10:54:04.826 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 10:54:04 CST 2020]; root of context hierarchy
+2020-03-17 10:54:05.501 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 10:54:05.691 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 10:54:05.793 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9031847f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 10:54:05.960 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 10:54:05.966 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 10:54:05.967 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 10:54:06.029 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 10:54:06.030 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1204 ms
+2020-03-17 10:54:06.130 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 10:54:06.134 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 10:54:06.134 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 10:54:06.135 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 10:54:06.135 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 10:54:06.691 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 10:54:06.692 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 10:54:06.692 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 10:54:06.693 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 10:54:06.693 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 10:54:06.695 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 10:54:06.696 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 10:54:06.696 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 10:54:06.699 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 10:54:06.699 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 10:54:06.800 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 10:54:04 CST 2020]; root of context hierarchy
+2020-03-17 10:54:06.834 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 10:54:06.834 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 10:54:06.860 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 10:54:07.040 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 10:54:07.046 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 10:54:07.046 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 10:54:07.055 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 10:54:07.062 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 10:54:07.260 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 10:54:07.265 [main] INFO  com.course.Application - Started Application in 2.691 seconds (JVM running for 3.094)
+2020-03-17 10:54:17.070 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 10:54:17.070 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 10:54:17.083 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2020-03-17 10:54:39.306 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 10:54:39.307 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 10:54:39.364 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 10:56:41.477 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 10:56:41.482 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 10:57:53.958 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 10:59:27.371 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 10:59:27.371 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 10:59:27.424 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 10:59:27.474 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 10:59:27.476 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 添加用户的数量是：1
+2020-03-17 10:59:29.524 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 10:59:29.543 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 10:59:31.593 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 10:59:31.596 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 10:59:33.667 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 10:59:33.669 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是2
+2020-03-17 11:02:13.749 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是2
+2020-03-17 11:02:13.822 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 11:03:29.595 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是2
+2020-03-17 11:08:17.567 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 10:54:04 CST 2020]; root of context hierarchy
+2020-03-17 11:08:17.569 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 11:08:17.569 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 11:08:27.767 [main] INFO  com.course.Application - Starting Application on localhost with PID 1304 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 11:08:27.769 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 11:08:27.818 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a1f72f5: startup date [Tue Mar 17 11:08:27 CST 2020]; root of context hierarchy
+2020-03-17 11:08:28.551 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 11:08:28.779 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 11:08:28.916 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$52032539] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 11:08:29.119 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 11:08:29.126 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 11:08:29.127 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 11:08:29.194 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 11:08:29.194 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1377 ms
+2020-03-17 11:08:29.317 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 11:08:29.320 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 11:08:29.321 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 11:08:29.321 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 11:08:29.321 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 11:08:30.047 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 11:08:30.047 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 11:08:30.048 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 11:08:30.048 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 11:08:30.048 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 11:08:30.051 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 11:08:30.051 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 11:08:30.052 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 11:08:30.055 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 11:08:30.055 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 11:08:30.198 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a1f72f5: startup date [Tue Mar 17 11:08:27 CST 2020]; root of context hierarchy
+2020-03-17 11:08:30.244 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 11:08:30.244 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 11:08:30.284 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 11:08:30.579 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 11:08:30.586 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 11:08:30.587 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 11:08:30.599 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 11:08:30.609 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 11:08:30.873 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 11:08:30.881 [main] INFO  com.course.Application - Started Application in 3.363 seconds (JVM running for 3.855)
+2020-03-17 11:08:40.244 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 11:08:40.245 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 11:08:40.261 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2020-03-17 11:10:09.409 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是2
+2020-03-17 11:10:09.439 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a1f72f5: startup date [Tue Mar 17 11:08:27 CST 2020]; root of context hierarchy
+2020-03-17 11:10:09.441 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 11:10:09.441 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 11:10:32.152 [main] INFO  com.course.Application - Starting Application on localhost with PID 1314 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 11:10:32.153 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 11:10:32.193 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 11:10:32 CST 2020]; root of context hierarchy
+2020-03-17 11:10:32.880 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 11:10:33.083 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 11:10:33.200 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12bbd8a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 11:10:33.387 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 11:10:33.394 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 11:10:33.394 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 11:10:33.460 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 11:10:33.460 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1268 ms
+2020-03-17 11:10:33.568 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 11:10:33.572 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 11:10:33.572 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 11:10:33.572 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 11:10:33.572 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 11:10:34.155 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 11:10:34.156 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 11:10:34.156 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 11:10:34.156 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 11:10:34.157 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 11:10:34.159 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 11:10:34.160 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 11:10:34.160 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 11:10:34.162 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 11:10:34.162 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 11:10:34.270 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 11:10:32 CST 2020]; root of context hierarchy
+2020-03-17 11:10:34.306 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 11:10:34.306 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 11:10:34.336 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 11:10:34.520 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 11:10:34.526 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 11:10:34.526 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 11:10:34.536 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 11:10:34.546 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 11:10:34.747 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 11:10:34.753 [main] INFO  com.course.Application - Started Application in 2.819 seconds (JVM running for 3.215)
+2020-03-17 11:11:22.279 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 11:11:22.279 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 11:11:22.293 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2020-03-17 11:11:22.546 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 11:11:22.547 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 11:11:22.602 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 11:27:06.545 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 11:27:06.545 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 11:27:06.597 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 11:27:06.642 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 11:27:06.646 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 添加用户的数量是：1
+2020-03-17 11:28:59.566 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 11:28:59.566 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 11:29:31.861 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 11:29:48.375 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 11:29:48.375 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 11:29:48.438 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 11:30:01.099 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 11:30:01.104 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户的数量是：1
+2020-03-17 11:39:42.758 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 11:39:42.763 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 添加用户的数量是：1
+2020-03-17 12:15:31.736 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 12:15:31.736 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 12:15:31.783 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 12:15:31.831 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 12:15:31.848 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 12:17:59.044 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 12:17:59.045 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 12:17:59.100 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 12:19:08.515 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 12:19:08.517 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 14:23:08.814 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 14:23:08.814 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 14:23:08.875 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 14:23:08.922 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 14:23:08.923 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 14:26:20.133 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 14:26:20.133 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 14:26:20.181 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 14:26:20.220 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 14:26:20.222 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 14:32:05.531 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 11:10:32 CST 2020]; root of context hierarchy
+2020-03-17 14:32:05.533 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 14:32:05.534 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 14:32:55.454 [main] INFO  com.course.Application - Starting Application on localhost with PID 1689 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 14:32:55.456 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 14:32:55.494 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 14:32:55 CST 2020]; root of context hierarchy
+2020-03-17 14:32:56.168 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 14:32:56.365 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 14:32:56.469 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ba74a680] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 14:32:56.640 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 14:32:56.647 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 14:32:56.648 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 14:32:56.708 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 14:32:56.709 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1215 ms
+2020-03-17 14:32:56.814 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 14:32:56.817 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 14:32:56.817 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 14:32:56.817 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 14:32:56.817 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 14:32:57.386 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 14:32:57.387 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 14:32:57.387 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 14:32:57.387 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 14:32:57.388 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 14:32:57.390 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 14:32:57.390 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 14:32:57.391 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 14:32:57.393 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 14:32:57.393 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 14:32:57.499 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 14:32:55 CST 2020]; root of context hierarchy
+2020-03-17 14:32:57.536 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 14:32:57.536 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 14:32:57.562 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 14:32:57.747 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 14:32:57.755 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 14:32:57.756 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 14:32:57.766 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 14:32:57.774 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 14:32:57.971 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 14:32:57.978 [main] INFO  com.course.Application - Started Application in 2.728 seconds (JVM running for 3.109)
+2020-03-17 14:33:07.390 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 14:33:07.390 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 14:33:07.405 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2020-03-17 14:33:07.651 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 14:33:07.651 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 14:33:07.706 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 14:33:07.738 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 14:33:07.752 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 14:40:11.294 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 14:40:11.294 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 14:40:11.340 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 14:40:11.382 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 14:40:11.383 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 15:12:52.434 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 15:12:52.434 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 15:12:52.488 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 15:12:52.536 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 15:12:52.538 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 15:14:32.479 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 15:14:32.479 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 15:14:32.528 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 15:14:32.571 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 15:14:32.573 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 15:18:16.392 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 15:18:16.392 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 15:18:16.442 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 15:18:16.483 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 15:18:16.485 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 15:22:40.779 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 15:22:40.779 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 15:22:40.849 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 15:22:40.897 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 15:22:40.899 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 15:23:59.679 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 15:23:59.680 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 15:23:59.734 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 15:23:59.777 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 15:23:59.779 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 15:25:15.443 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 15:25:15.443 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 15:25:15.499 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 15:25:15.540 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 15:25:15.542 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 15:27:15.231 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 15:27:15.231 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 15:27:15.291 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 15:27:15.358 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 15:27:15.361 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 15:28:34.961 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 15:28:34.962 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 15:28:35.035 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 15:28:35.086 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 15:28:35.087 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 15:28:47.456 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 15:28:47.456 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 15:28:47.508 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 15:28:47.551 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 15:28:47.578 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2020-03-17 15:29:47.629 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 14:32:55 CST 2020]; root of context hierarchy
+2020-03-17 15:29:47.630 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 15:29:47.631 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 15:54:07.378 [main] INFO  com.course.Application - Starting Application on localhost with PID 1825 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 15:54:07.380 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 15:54:07.418 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 15:54:07 CST 2020]; root of context hierarchy
+2020-03-17 15:54:08.150 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 15:54:08.351 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 15:54:08.461 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a640de6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 15:54:08.646 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 15:54:08.652 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 15:54:08.652 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 15:54:08.715 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 15:54:08.715 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1297 ms
+2020-03-17 15:54:08.824 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 15:54:08.828 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 15:54:08.828 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 15:54:08.828 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 15:54:08.828 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 15:54:09.425 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 15:54:09.426 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 15:54:09.426 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 15:54:09.427 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 15:54:09.427 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 15:54:09.429 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 15:54:09.430 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 15:54:09.430 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 15:54:09.432 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 15:54:09.433 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 15:54:09.542 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 15:54:07 CST 2020]; root of context hierarchy
+2020-03-17 15:54:09.578 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 15:54:09.578 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 15:54:09.607 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 15:54:09.803 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 15:54:09.810 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 15:54:09.810 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 15:54:09.820 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 15:54:09.828 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 15:54:10.034 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 15:54:10.039 [main] INFO  com.course.Application - Started Application in 2.888 seconds (JVM running for 3.285)
+2020-03-17 15:54:15.836 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 15:54:15.836 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 15:54:15.851 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2020-03-17 15:54:16.108 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 15:54:16.109 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 15:54:16.171 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 15:54:16.212 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 15:54:16.227 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 15:56:49.613 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 15:56:49.613 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 15:56:49.669 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 15:56:49.719 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 15:56:49.724 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:04:08.682 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:04:08.683 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:04:08.737 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 16:04:08.780 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:04:08.781 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:07:23.439 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 15:54:07 CST 2020]; root of context hierarchy
+2020-03-17 16:07:23.440 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 16:07:23.441 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 16:07:34.176 [main] INFO  com.course.Application - Starting Application on localhost with PID 1873 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 16:07:34.178 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 16:07:34.216 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 16:07:34 CST 2020]; root of context hierarchy
+2020-03-17 16:07:34.910 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 16:07:35.109 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:07:35.213 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4b19dada] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 16:07:35.394 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 16:07:35.401 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 16:07:35.401 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 16:07:35.462 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 16:07:35.462 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1246 ms
+2020-03-17 16:07:35.566 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 16:07:35.569 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 16:07:35.569 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 16:07:35.569 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 16:07:35.569 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 16:07:36.164 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:07:36.165 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:07:36.165 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 16:07:36.165 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:07:36.166 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 16:07:36.168 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 16:07:36.169 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 16:07:36.169 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 16:07:36.171 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 16:07:36.172 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 16:07:36.282 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 16:07:34 CST 2020]; root of context hierarchy
+2020-03-17 16:07:36.320 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:07:36.320 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:07:36.348 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:07:36.541 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 16:07:36.547 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 16:07:36.548 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 16:07:36.560 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 16:07:36.569 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 16:07:36.772 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 16:07:36.776 [main] INFO  com.course.Application - Started Application in 2.808 seconds (JVM running for 3.212)
+2020-03-17 16:07:43.057 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 16:07:43.057 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 16:07:43.071 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2020-03-17 16:07:43.335 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:07:43.335 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:07:43.398 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 16:07:43.438 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:07:43.454 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:08:49.192 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 16:07:34 CST 2020]; root of context hierarchy
+2020-03-17 16:08:49.194 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 16:08:49.194 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 16:08:55.994 [main] INFO  com.course.Application - Starting Application on localhost with PID 1880 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 16:08:55.996 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 16:08:56.046 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a1f72f5: startup date [Tue Mar 17 16:08:56 CST 2020]; root of context hierarchy
+2020-03-17 16:08:56.812 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 16:08:57.067 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:08:57.206 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$76ca8690] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 16:08:57.425 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 16:08:57.434 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 16:08:57.435 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 16:08:57.507 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 16:08:57.507 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1461 ms
+2020-03-17 16:08:57.671 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 16:08:57.674 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 16:08:57.675 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 16:08:57.675 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 16:08:57.675 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 16:08:58.466 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:08:58.467 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 16:08:58.467 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:08:58.468 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:08:58.468 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 16:08:58.471 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 16:08:58.471 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 16:08:58.472 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 16:08:58.475 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 16:08:58.475 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 16:08:58.621 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a1f72f5: startup date [Tue Mar 17 16:08:56 CST 2020]; root of context hierarchy
+2020-03-17 16:08:58.670 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:08:58.670 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:08:58.709 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:08:59.020 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 16:08:59.028 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 16:08:59.028 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 16:08:59.043 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 16:08:59.053 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 16:08:59.319 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 16:08:59.323 [main] INFO  com.course.Application - Started Application in 3.585 seconds (JVM running for 4.115)
+2020-03-17 16:09:04.725 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 16:09:04.726 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 16:09:04.743 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2020-03-17 16:09:05.054 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:09:05.054 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:09:05.129 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 16:09:05.187 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:10:32.715 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:12:04.493 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:12:04.493 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:12:04.517 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a1f72f5: startup date [Tue Mar 17 16:08:56 CST 2020]; root of context hierarchy
+2020-03-17 16:12:04.519 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 16:12:04.520 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 16:12:12.794 [main] INFO  com.course.Application - Starting Application on localhost with PID 1891 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 16:12:12.796 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 16:12:12.837 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 16:12:12 CST 2020]; root of context hierarchy
+2020-03-17 16:12:13.528 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 16:12:13.739 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:12:13.855 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ba74a680] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 16:12:14.052 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 16:12:14.061 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 16:12:14.062 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 16:12:14.122 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 16:12:14.122 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1285 ms
+2020-03-17 16:12:14.223 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 16:12:14.226 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 16:12:14.227 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 16:12:14.227 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 16:12:14.227 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 16:12:14.826 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:12:14.827 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 16:12:14.827 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:12:14.827 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:12:14.828 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 16:12:14.830 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 16:12:14.830 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 16:12:14.831 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 16:12:14.833 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 16:12:14.833 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 16:12:14.938 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 16:12:12 CST 2020]; root of context hierarchy
+2020-03-17 16:12:14.975 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:12:14.975 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:12:15.002 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:12:15.193 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 16:12:15.199 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 16:12:15.199 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 16:12:15.209 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 16:12:15.217 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 16:12:15.429 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 16:12:15.434 [main] INFO  com.course.Application - Started Application in 2.849 seconds (JVM running for 3.245)
+2020-03-17 16:12:27.357 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 16:12:27.357 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 16:12:27.378 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2020-03-17 16:12:27.629 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:12:27.629 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:12:27.686 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 16:12:27.726 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:12:27.739 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:19:35.635 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:19:35.635 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:19:35.688 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 16:19:35.729 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:19:35.732 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:19:37.796 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:19:37.797 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:20:04.840 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:20:04.841 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:20:04.893 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 16:20:04.942 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:20:04.943 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:20:07.016 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:20:07.018 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:26:43.597 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 16:12:12 CST 2020]; root of context hierarchy
+2020-03-17 16:26:43.601 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 16:26:43.602 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 16:27:34.793 [main] INFO  com.course.Application - Starting Application on localhost with PID 1924 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 16:27:34.795 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 16:27:34.832 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 16:27:34 CST 2020]; root of context hierarchy
+2020-03-17 16:27:35.548 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 16:27:35.745 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:27:35.853 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d45f42ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 16:27:36.035 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 16:27:36.042 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 16:27:36.042 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 16:27:36.107 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 16:27:36.107 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1275 ms
+2020-03-17 16:27:36.214 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 16:27:36.216 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 16:27:36.217 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 16:27:36.217 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 16:27:36.217 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 16:27:36.788 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:27:36.790 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:27:36.790 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 16:27:36.790 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:27:36.791 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 16:27:36.793 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 16:27:36.794 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 16:27:36.794 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 16:27:36.797 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 16:27:36.797 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 16:27:36.904 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 16:27:34 CST 2020]; root of context hierarchy
+2020-03-17 16:27:36.941 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:27:36.941 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:27:36.968 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:27:37.149 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 16:27:37.155 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 16:27:37.156 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 16:27:37.167 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 16:27:37.174 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 16:27:37.375 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 16:27:37.380 [main] INFO  com.course.Application - Started Application in 2.8 seconds (JVM running for 3.182)
+2020-03-17 16:27:47.114 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 16:27:47.114 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 16:27:47.132 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2020-03-17 16:27:47.393 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:27:47.393 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:27:47.454 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 16:27:47.496 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:27:47.509 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:27:49.569 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:27:49.574 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:29:53.534 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 16:27:34 CST 2020]; root of context hierarchy
+2020-03-17 16:29:53.536 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 16:29:53.536 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 16:30:13.836 [main] INFO  com.course.Application - Starting Application on localhost with PID 1933 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 16:30:13.839 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 16:30:13.889 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a1f72f5: startup date [Tue Mar 17 16:30:13 CST 2020]; root of context hierarchy
+2020-03-17 16:30:14.618 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 16:30:14.843 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:30:14.971 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6c4b6622] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 16:30:15.183 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 16:30:15.191 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 16:30:15.192 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 16:30:15.262 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 16:30:15.262 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1373 ms
+2020-03-17 16:30:15.390 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 16:30:15.394 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 16:30:15.394 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 16:30:15.394 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 16:30:15.394 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 16:30:16.112 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:30:16.113 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 16:30:16.113 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:30:16.114 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:30:16.114 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 16:30:16.117 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 16:30:16.118 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 16:30:16.119 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 16:30:16.122 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 16:30:16.122 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 16:30:16.266 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a1f72f5: startup date [Tue Mar 17 16:30:13 CST 2020]; root of context hierarchy
+2020-03-17 16:30:16.313 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:30:16.313 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:30:16.353 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:30:16.751 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 16:30:16.759 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 16:30:16.759 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 16:30:16.771 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 16:30:16.784 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 16:30:17.058 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 16:30:17.062 [main] INFO  com.course.Application - Started Application in 3.478 seconds (JVM running for 3.962)
+2020-03-17 16:30:22.829 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 16:30:22.829 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 16:30:22.845 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2020-03-17 16:30:23.173 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:30:23.173 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:30:23.256 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 16:30:23.299 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:34:52.799 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:34:52.799 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:34:52.799 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:34:52.799 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:34:52.811 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:34:52.824 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a1f72f5: startup date [Tue Mar 17 16:30:13 CST 2020]; root of context hierarchy
+2020-03-17 16:34:52.826 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 16:34:52.826 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 16:34:58.946 [main] INFO  com.course.Application - Starting Application on localhost with PID 1950 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 16:34:58.949 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 16:34:58.996 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a1f72f5: startup date [Tue Mar 17 16:34:58 CST 2020]; root of context hierarchy
+2020-03-17 16:34:59.752 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 16:35:00.002 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:35:00.158 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4e350b63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 16:35:00.385 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 16:35:00.392 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 16:35:00.393 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 16:35:00.458 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 16:35:00.458 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1463 ms
+2020-03-17 16:35:00.585 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 16:35:00.590 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 16:35:00.591 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 16:35:00.591 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 16:35:00.591 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 16:35:01.343 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:35:01.344 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:35:01.344 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:35:01.344 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 16:35:01.345 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 16:35:01.347 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 16:35:01.348 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 16:35:01.348 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 16:35:01.350 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 16:35:01.351 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 16:35:01.500 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a1f72f5: startup date [Tue Mar 17 16:34:58 CST 2020]; root of context hierarchy
+2020-03-17 16:35:01.549 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:35:01.549 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:35:01.588 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:35:01.884 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 16:35:01.891 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 16:35:01.892 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 16:35:01.904 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 16:35:01.915 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 16:35:02.217 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 16:35:02.222 [main] INFO  com.course.Application - Started Application in 3.53 seconds (JVM running for 4.021)
+2020-03-17 16:35:12.621 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 16:35:12.621 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 16:35:12.639 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2020-03-17 16:35:12.924 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:35:12.924 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:35:12.995 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 16:35:13.051 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:35:40.634 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:36:46.623 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:36:46.623 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:36:46.650 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a1f72f5: startup date [Tue Mar 17 16:34:58 CST 2020]; root of context hierarchy
+2020-03-17 16:36:46.652 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 16:36:46.653 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 16:36:58.150 [main] INFO  com.course.Application - Starting Application on localhost with PID 1960 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 16:36:58.153 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 16:36:58.197 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 16:36:58 CST 2020]; root of context hierarchy
+2020-03-17 16:36:58.937 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 16:36:59.167 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 16:36:59.285 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$827beb0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 16:36:59.507 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 16:36:59.516 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 16:36:59.517 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 16:36:59.585 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 16:36:59.585 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1389 ms
+2020-03-17 16:36:59.688 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 16:36:59.691 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 16:36:59.692 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 16:36:59.692 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 16:36:59.692 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 16:37:00.293 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:37:00.293 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:37:00.293 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 16:37:00.294 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 16:37:00.294 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 16:37:00.296 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 16:37:00.297 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 16:37:00.297 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 16:37:00.299 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 16:37:00.300 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 16:37:00.413 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 16:36:58 CST 2020]; root of context hierarchy
+2020-03-17 16:37:00.452 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:37:00.452 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:37:00.479 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 16:37:00.671 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 16:37:00.677 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 16:37:00.677 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 16:37:00.687 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 16:37:00.697 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 16:37:00.902 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 16:37:00.908 [main] INFO  com.course.Application - Started Application in 2.973 seconds (JVM running for 3.373)
+2020-03-17 16:37:05.380 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 16:37:05.380 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 16:37:05.398 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2020-03-17 16:37:05.640 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:37:05.641 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:37:05.705 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 16:37:05.756 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:37:05.768 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 16:38:12.018 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 16:38:12.018 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 16:38:12.082 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 16:38:12.132 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2020-03-17 16:38:12.134 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 更新数据的条目数为1
+2020-03-17 17:11:28.058 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 16:36:58 CST 2020]; root of context hierarchy
+2020-03-17 17:11:28.061 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 17:11:28.062 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-03-17 17:23:10.569 [main] INFO  com.course.Application - Starting Application on localhost with PID 2072 (started by apple in /Users/apple/Desktop/学习/课程代码/AutoTest)
+2020-03-17 17:23:10.572 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2020-03-17 17:23:10.623 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 17:23:10 CST 2020]; root of context hierarchy
+2020-03-17 17:23:11.309 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2020-03-17 17:23:11.505 [main] INFO  o.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 17:23:11.614 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ba74a680] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-17 17:23:11.785 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2020-03-17 17:23:11.792 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2020-03-17 17:23:11.793 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-03-17 17:23:11.851 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-17 17:23:11.851 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1228 ms
+2020-03-17 17:23:11.948 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-17 17:23:11.951 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-17 17:23:11.952 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-17 17:23:11.952 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-17 17:23:11.952 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-17 17:23:12.542 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 17:23:12.542 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 17:23:12.543 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2020-03-17 17:23:12.543 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2020-03-17 17:23:12.544 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-17 17:23:12.546 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-17 17:23:12.547 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-17 17:23:12.547 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-17 17:23:12.550 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-17 17:23:12.550 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-17 17:23:12.656 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 17:23:10 CST 2020]; root of context hierarchy
+2020-03-17 17:23:12.692 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 17:23:12.692 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 17:23:12.721 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-17 17:23:12.898 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-17 17:23:12.904 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-03-17 17:23:12.905 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-03-17 17:23:12.915 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-03-17 17:23:12.923 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-03-17 17:23:13.126 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2020-03-17 17:23:13.131 [main] INFO  com.course.Application - Started Application in 2.79 seconds (JVM running for 3.285)
+2020-03-17 17:23:17.753 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-17 17:23:17.753 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-17 17:23:17.766 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2020-03-17 17:23:18.007 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2020-03-17 17:23:18.007 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 登录的用户是：zhangsan
+2020-03-17 17:23:18.066 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2020-03-17 17:51:02.651 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72a7c7e0: startup date [Tue Mar 17 17:23:10 CST 2020]; root of context hierarchy
+2020-03-17 17:51:02.653 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2020-03-17 17:51:02.653 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
